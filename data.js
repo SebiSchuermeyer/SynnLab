@@ -1,13 +1,15 @@
 // ── FIREBASE CONFIG ──
 // Replace with your actual Firebase project config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBL01CF4uoFyNOcuvld7sUvCmkxq2PZpJY",
+  authDomain: "synn-lab-website.firebaseapp.com",
+  projectId: "synn-lab-website",
+  storageBucket: "synn-lab-website.firebasestorage.app",
+  messagingSenderId: "13702226348",
+  appId: "1:13702226348:web:07e85688b017e6d301da09",
+  measurementId: "G-MSYNH78VTL"
 };
+
 
 // ── TEACHER DATA ──
 const TEACHERS = [
