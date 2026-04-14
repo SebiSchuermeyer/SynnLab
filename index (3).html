@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synnovation Lab — Sycamore High School</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav>
+  <a class="nav-logo" href="#" onclick="navigate('home')">Synnovation Lab</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home" onclick="navigate('home')">Home</a></li>
+    <li><a href="#" data-page="teachers" onclick="navigate('teachers')">Teachers</a></li>
+    <li><a href="#" data-page="interviews" onclick="navigate('interviews')">Student Stories</a></li>
+    <li><a href="#" data-page="gallery" onclick="navigate('gallery')">Gallery</a></li>
+    <li><a href="#" data-page="contact" onclick="navigate('contact')">Contact</a></li>
+    <li><a href="#" data-page="admin" class="nav-admin" onclick="navigate('admin')">Staff Portal</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════ HOME PAGE ══════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Sycamore High School</div>
+      <h1>The <span>Synnovation</span> Lab</h1>
+      <p class="hero-sub">
+        Our mission is to deliver a meaningful learning experience to high school students through the use of project-based learning — where students take ownership of their learning, preparing them for the future.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <button onclick="navigate('teachers')" style="background:var(--gold);color:var(--dark);border:none;padding:0.85rem 2rem;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">Meet Our Teachers</button>
+        <button onclick="navigate('interviews')" style="background:transparent;color:white;border:1.5px solid rgba(255,255,255,0.4);padding:0.85rem 2rem;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:500;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.8)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.4)'">Student Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Pillars -->
+  <section class="section" style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-label">What We Stand For</div>
+      <h2 class="section-title">The Three Pillars of the Synnovation Lab</h2>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">📖</div>
+          <h3>Meaningful Learning</h3>
+          <p>Students use the formative process in order to understand content and concepts at a deeper level. This allows students to prepare for summative assessments in a way that makes sense to them.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🎯</div>
+          <h3>Personalization</h3>
+          <p>The Synn Lab is personalized to each member through the use of one-on-one teaching, flexibility in how students present their knowledge, and the ability for students to suggest and make changes.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🤝</div>
+          <h3>Community</h3>
+          <p>The Synn Lab is one of the most tight-knit communities in Sycamore High School. The space and events are specially designed to promote collaboration and foster bonds between people across different grades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick stats -->
+  <section class="section" style="background:var(--green);padding:3rem 2rem;">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;text-align:center;">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);">11</div>
+          <div style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-top:0.25rem;">Dedicated Educators</div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);">4</div>
+          <div style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-top:0.25rem;">Core Subject Areas</div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);">3</div>
+          <div style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-top:0.25rem;">Founding Pillars</div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);">∞</div>
+          <div style="color:rgba(255,255,255,0.75);font-size:0.9rem;margin-top:0.25rem;">Possibilities</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section class="section" style="background:var(--cream);">
+    <div class="section-inner">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+        <div>
+          <div class="section-label">What's Coming Up</div>
+          <h2 class="section-title" style="margin-bottom:0;">Upcoming Events</h2>
+        </div>
+        <a href="javascript:void(0)" onclick="window.open(CALENDAR_FULL_URL,'_blank')" class="btn-calendar-full">
+          View Full Calendar &rarr;
+        </a>
+      </div>
+      <div id="upcoming-events" class="events-list">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════ TEACHERS PAGE ══════════ -->
+<div class="page" id="page-teachers">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Our Team</div>
+      <h2 class="section-title">Meet the Teachers</h2>
+      <p style="color:var(--text-muted);margin-bottom:2rem;font-size:0.95rem;">Live locations are updated by staff. Check back to see where your teacher is today.</p>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Staff</button>
+        <button class="filter-tab" data-filter="math">Mathematics</button>
+        <button class="filter-tab" data-filter="english">English</button>
+        <button class="filter-tab" data-filter="science">Science</button>
+        <button class="filter-tab" data-filter="history">History</button>
+        <button class="filter-tab" data-filter="coach">Coaches & Support</button>
+      </div>
+      <div class="teachers-grid" id="teachers-grid">
+        <!-- rendered by JS -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════ INTERVIEWS PAGE ══════════ -->
+<div class="page" id="page-interviews">
+  <section class="hero" style="padding:5rem 2rem 4rem;">
+    <div class="hero-content">
+      <div class="hero-badge">Hear From Students</div>
+      <h1 style="font-size:clamp(2rem,5vw,3.5rem);">Student <span>Stories</span></h1>
+      <p class="hero-sub">Real words from real Synn Lab members — on growth, challenges, and what it takes to thrive here.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <div class="interviews-grid" id="interviews-grid">
+        <!-- rendered by JS -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════ GALLERY PAGE ══════════ -->
+<div class="page" id="page-gallery">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Life in the Lab</div>
+      <h2 class="section-title">Photo Gallery</h2>
+      <div class="gallery-placeholder">
+        <div style="font-size:3rem;">📸</div>
+        <p style="font-weight:600;color:var(--green);margin-top:0.5rem;">Photos Coming Soon</p>
+        <p>Connect a Google Drive folder below to auto-populate this gallery. Once connected, new photos added to the folder will automatically appear here.</p>
+        <div style="margin-top:1.5rem;background:var(--cream);border:1px solid #d0dbd3;border-radius:10px;padding:1.25rem;text-align:left;max-width:500px;margin-left:auto;margin-right:auto;">
+          <p style="font-size:0.85rem;color:var(--green);font-weight:600;margin-bottom:0.5rem;">📋 Setup Instructions</p>
+          <ol style="font-size:0.85rem;color:var(--text-muted);padding-left:1.25rem;line-height:1.8;">
+            <li>Create a public Google Drive folder</li>
+            <li>Share it so "Anyone with the link can view"</li>
+            <li>Add your Google Drive API key to <code>app.js</code></li>
+            <li>Add the folder ID to the gallery config in <code>app.js</code></li>
+            <li>Photos will auto-rotate as new ones are added</li>
+          </ol>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:1rem;">
+          Note: The Google Photos link you provided uses a non-API share format.<br>
+          For auto-syncing, a <strong>Google Drive folder</strong> is recommended instead.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════ CONTACT PAGE ══════════ -->
+<div class="page" id="page-contact">
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact & Calendar</h2>
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div>
+          <div class="contact-form-wrap">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--green);font-size:1.4rem;margin-bottom:0.5rem;">Send Us a Message</h3>
+            <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1.5rem;">Have a question or want to learn more about the Synn Lab? Reach out!</p>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="cf-name">Full Name</label>
+                <input type="text" id="cf-name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-other">Message / Other</label>
+                <textarea id="cf-other" placeholder="Tell us what's on your mind..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+              <div class="form-success" id="form-success">✓ Message sent! We'll be in touch soon.</div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Google Calendar -->
+        <div>
+          <h3 style="font-family:'Playfair Display',serif;color:var(--green);font-size:1.4rem;margin-bottom:1rem;">Lab Calendar</h3>
+          <div class="calendar-wrap">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=c_11826ce2a0863e61725e61ca90ed7560418d88d94590c691bc935c0a415794d0%40group.calendar.google.com&ctz=America%2FNew_York&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH"
+              title="Synnovation Lab Calendar"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.75rem;">Calendar updates automatically. All times reflect Eastern Time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════ ADMIN PAGE ══════════ -->
+<div class="page" id="page-admin">
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Login -->
+      <div id="admin-login-section">
+        <div class="admin-login">
+          <h2>Staff Portal</h2>
+          <p>Enter the staff password to update teacher locations.</p>
+          <form id="admin-login-form" novalidate>
+            <div class="form-group">
+              <label for="admin-pw">Password</label>
+              <input type="password" id="admin-pw" placeholder="Enter staff password" required />
+            </div>
+            <div class="error-msg" id="admin-error"></div>
+            <button type="submit" class="btn-primary" style="margin-top:0.5rem;">Log In</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Panel -->
+      <div id="admin-panel-section" style="display:none;">
+        <div class="admin-panel">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:0.5rem;">
+            <h2>Update Teacher Locations</h2>
+            <button onclick="adminLogout()" class="btn-logout" style="background:var(--green);border:1.5px solid var(--green-light);color:white;padding:0.4rem 1rem;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:0.85rem;cursor:pointer;">Log Out</button>
+          </div>
+          <p>Select each teacher's current location. Students can see these live on the Teachers page.</p>
+          <div class="admin-grid" id="admin-grid">
+            <!-- rendered by JS -->
+          </div>
+          <button onclick="saveAllLocations()" class="btn-save-all">Save All Locations</button>
+          <div class="admin-save-msg" id="admin-save-msg"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <p>© 2025 <span>Synnovation Lab</span> · Sycamore High School · Built with pride by the Synn community</p>
+</footer>
+
+<!-- Scripts -->
+<script src="data.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
