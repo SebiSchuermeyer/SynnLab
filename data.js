@@ -1,5 +1,7 @@
-// ── FIREBASE CONFIG ──
-// Replace with your actual Firebase project config
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, doc, getDoc, setDoc, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+// Your config (keep yours exactly)
 const firebaseConfig = {
   apiKey: "AIzaSyBL01CF4uoFyNOcuvld7sUvCmkxq2PZpJY",
   authDomain: "synn-lab-website.firebaseapp.com",
@@ -9,6 +11,13 @@ const firebaseConfig = {
   appId: "1:13702226348:web:07e85688b017e6d301da09",
   measurementId: "G-MSYNH78VTL"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Make db global so your other code can use it
+window.db = db;
 
 
 // ── TEACHER DATA ──
