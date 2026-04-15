@@ -6,7 +6,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyCux-Zu4NtHdba_xV9tHPG3EoSbxNH-iaY",
   authDomain: "synnlab.firebaseapp.com",
   projectId: "synnlab",
@@ -26,7 +26,7 @@ const CALENDAR_API_KEY = "AIzaSyCetKTh3b94ojpvivdWyeM2BS0bYJXhfW8";
 const CALENDAR_FULL_URL = "https://calendar.google.com/calendar/u/0?cid=Y18xMTgyNmNlMmEwODYzZTYxNzI1ZTYxY2E5MGVkNzU2MDQxOGQ4OGQ5NDU5MGM2OTFiYzkzNWMwYTQxNTc5NGQwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20";
 
 // ── TEACHER DATA ──
-const TEACHERS = [
+export const TEACHERS = [
   {
     id: "ulland",
     name: "Mr. Ulland",
@@ -165,7 +165,7 @@ const INTERVIEWS = [
 ];
 
 // ── LOCATIONS ──
-const LOCATIONS = [
+export const LOCATIONS = [
   "Math Room",
   "Science Room",
   "English Room",
@@ -175,4 +175,4 @@ const LOCATIONS = [
   "Other"
 ];
 
-const ADMIN_PASSWORD = "SynnStaff26";
+export const ADMIN_PASSWORD = "SynnStaff26";
