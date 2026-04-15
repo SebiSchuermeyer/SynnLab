@@ -1,5 +1,5 @@
-// ── IMPORTS FROM DATA.JS ──
-import { firebaseConfig, TEACHERS, LOCATIONS, ADMIN_PASSWORD, INTERVIEWS, CALENDAR_ID, CALENDAR_API_KEY } from './data.js';
+// Add these to the top of app.js (Line 1)
+const { firebaseConfig, CALENDAR_ID, CALENDAR_API_KEY, TEACHERS, LOCATIONS, ADMIN_PASSWORD } = window;
 
 // ── FIREBASE INIT ──
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
