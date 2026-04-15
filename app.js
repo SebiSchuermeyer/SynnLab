@@ -1,3 +1,10 @@
+// ── IMPORTS FROM DATA.JS ──
+import { firebaseConfig, TEACHERS, LOCATIONS, ADMIN_PASSWORD, INTERVIEWS, CALENDAR_ID, CALENDAR_API_KEY } from './data.js';
+
+// ── FIREBASE INIT ──
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+// ... (keep the rest of your firestore imports the same)
+
 // ── FIREBASE INIT ──
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc, collection, addDoc, serverTimestamp }
