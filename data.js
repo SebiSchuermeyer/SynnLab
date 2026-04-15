@@ -1,11 +1,4 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// ── FIREBASE CONFIG ──
 export const firebaseConfig = {
   apiKey: "AIzaSyCux-Zu4NtHdba_xV9tHPG3EoSbxNH-iaY",
   authDomain: "synnlab.firebaseapp.com",
@@ -16,14 +9,10 @@ export const firebaseConfig = {
   measurementId: "G-N9XWC7FVL5"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 // ── GOOGLE CALENDAR CONFIG ──
-const CALENDAR_ID = "c_11826ce2a0863e61725e61ca90ed7560418d88d94590c691bc935c0a415794d0@group.calendar.google.com";
-const CALENDAR_API_KEY = "AIzaSyCetKTh3b94ojpvivdWyeM2BS0bYJXhfW8";
-const CALENDAR_FULL_URL = "https://calendar.google.com/calendar/u/0?cid=Y18xMTgyNmNlMmEwODYzZTYxNzI1ZTYxY2E5MGVkNzU2MDQxOGQ4OGQ5NDU5MGM2OTFiYzkzNWMwYTQxNTc5NGQwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20";
+export const CALENDAR_ID = "c_11826ce2a0863e61725e61ca90ed7560418d88d94590c691bc935c0a415794d0@group.calendar.google.com";
+export const CALENDAR_API_KEY = "AIzaSyCetKTh3b94ojpvivdWyeM2BS0bYJXhfW8";
+export const CALENDAR_FULL_URL = "https://calendar.google.com/calendar/u/0?cid=Y18xMTgyNmNlMmEwODYzZTYxNzI1ZTYxY2E5MGVkNzU2MDQxOGQ4OGQ5NDU5MGM2OTFiYzkzNWMwYTQxNTc5NGQwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20";
 
 // ── TEACHER DATA ──
 export const TEACHERS = [
@@ -33,117 +22,73 @@ export const TEACHERS = [
     subject: "Mathematics",
     initials: "U",
     schedule: "Traditional: Monday & Wednesday | In Lab: Tuesday, Thursday, Friday",
-    bio: "Mr. Ulland is one of the math teachers in the lab. He teaches geometry, all the way through CCP calculus. He loves watching bald eagles by the Ohio River and is an expert at predicting snow days!",
+    bio: "Mr. Ulland is one of the math teachers in the lab. He teaches geometry, all the way through CCP calculus.",
     defaultLocation: "Synn Lab"
   },
   {
-    id: "pletz",
-    name: "Mr. Pletz",
+    id: "hall",
+    name: "Mr. Hall",
     subject: "Mathematics",
-    initials: "P",
-    schedule: "Traditional: Tuesday & Thursday | In Lab: Monday, Wednesday, Friday",
-    bio: "Mr. Pletz is a math teacher in the lab. He teaches algebra 1, geometry, and statistics. In his free time, he spends time with his many kids and many dogs. His proudest moment is getting rejected by NASA. He tried out for a game show and did not advance — but on the bright side, he will get every student a lunch of their choice from a restaurant.",
-    defaultLocation: "Math Room"
-  },
-  {
-    id: "tuertscher",
-    name: "Mrs. Tuertscher",
-    subject: "English",
-    initials: "T",
-    schedule: "Traditional: Tuesday & Thursday",
-    bio: "Mrs. Tuertscher is an English teacher who teaches English 10, 11, and 12. She is a fitness guru, and legend has it that she finished a full triathlon during her lunch break. Her favorite place to hang out in the lab is in the book nook, and she is always ready to help if you have a question.",
-    defaultLocation: "English Room"
-  },
-  {
-    id: "feist",
-    name: "Mrs. Feist",
-    subject: "English",
-    initials: "F",
-    schedule: "Traditional: Monday & Wednesday",
-    bio: "Mrs. Feist is an English teacher in the lab who teaches English 9, CCP Comp, and AP Lang. When you don't find Mrs. Feist reading a book in the book nook, there's a good chance she is working on scheduling Tuesday Talks or reading poetry madness poems. She is always very supportive and willing to proofread your essays.",
-    defaultLocation: "English Room"
-  },
-  {
-    id: "langdon",
-    name: "Mr. Langdon",
-    subject: "Science",
-    initials: "L",
-    schedule: "Traditional: Tuesday & Thursday",
-    bio: "Mr. Langdon is a science teacher in the lab who teaches Bio, AP Bio, and APES. When he is not teaching science, you can find him coaching swim. He is also the go-to person for any questions in the maker space, including the use of our 3D printers and laser cutters.",
-    defaultLocation: "Science Room"
-  },
-  {
-    id: "arnold",
-    name: "Mr. Arnold",
-    subject: "Science",
-    initials: "A",
-    schedule: "Traditional: Monday & Wednesday",
-    bio: "Mr. Arnold is a science teacher in the lab who teaches Chem. When he is not teaching chem to students (and making their brains hurt), he is probably running one of the million things he does in the lab. You may find him feeding fish in the fish tank, writing a question of the day, or being in a meeting with another teacher.",
-    defaultLocation: "Science Room"
-  },
-  {
-    id: "fogelson",
-    name: "Mr. Fogelson",
-    subject: "History",
-    initials: "F",
-    schedule: "Traditional: Tuesday, Thursday, Friday | In Lab: Monday, Wednesday",
-    bio: "Mr. Fogelson is a history teacher in the lab and teaches CCP American and AP Gov. While passing by his room, you may see the American flag with his face on it. He is the best team leader in the Synn Lab (not biased whatsoever). Students describe him as the most \"studious\" teacher in the lab.",
-    defaultLocation: "Synn Lab"
-  },
-  {
-    id: "hellwig",
-    name: "Mr. Hellwig",
-    subject: "History",
     initials: "H",
-    schedule: "Traditional: Monday & Wednesday",
-    bio: "Mr. Hellwig is a history teacher in the lab. He teaches world history and AP Human Geography. He is also the water polo coach here at Sycamore. In the winter, you could catch him playing or watching curling. He is also the newest addition to the Synnovation Lab staff!",
-    defaultLocation: "History Room"
+    schedule: "Traditional: Tuesday & Thursday | In Lab: Monday, Wednesday, Friday",
+    bio: "Mr. Hall is one of the math teachers in the lab. He teaches Algebra 2 and various other math courses.",
+    defaultLocation: "Synn Lab"
   },
   {
     id: "conatser",
     name: "Mrs. Conatser",
-    subject: "Academic Coach",
+    subject: "English",
     initials: "C",
-    schedule: "In Lab daily",
-    bio: "Mrs. Conatser is one of the academic coaches in the lab. If you need any help to set up a plan or manage time better, she is someone you can always go to. She is one of the adult leaders in Fashion for the Cure, and is always willing to help.",
+    schedule: "Traditional: Monday & Wednesday | In Lab: Tuesday, Thursday, Friday",
+    bio: "Mrs. Conatser is the English teacher in the lab. She teaches English 9 through English 12, along with CCP English.",
     defaultLocation: "Synn Lab"
   },
   {
-    id: "underwood",
-    name: "Mrs. Underwood",
-    subject: "Meaningful Learning Specialist",
-    initials: "U",
-    schedule: "In Lab daily",
-    bio: "Mrs. Underwood is a staff member in the lab committed to making the most out of the meaningful learning pillar of the lab. She schedules field trips to help expand the knowledge of the students in a deeper way. She also assists other teachers in a variety of ways.",
+    id: "phillips",
+    name: "Mr. Phillips",
+    subject: "History",
+    initials: "P",
+    schedule: "Traditional: Tuesday & Thursday | In Lab: Monday, Wednesday, Friday",
+    bio: "Mr. Phillips is the history teacher in the lab. He teaches World History, US History, Government, and Economics.",
     defaultLocation: "Synn Lab"
   },
   {
-    id: "burpee",
-    name: "Mrs. Burpee",
-    subject: "Academic Coach",
+    id: "corradini",
+    name: "Mr. Corradini",
+    subject: "Science",
+    initials: "Co",
+    schedule: "Traditional: Monday & Wednesday | In Lab: Tuesday, Thursday, Friday",
+    bio: "Mr. Corradini is one of the science teachers in the lab. He teaches Biology, Chemistry, and Physics.",
+    defaultLocation: "Synn Lab"
+  },
+  {
+    id: "syverson",
+    name: "Mr. Syverson",
+    subject: "Science",
+    initials: "S",
+    schedule: "Traditional: Tuesday & Thursday | In Lab: Monday, Wednesday, Friday",
+    bio: "Mr. Syverson is one of the science teachers in the lab. He teaches Biology and Environmental Science.",
+    defaultLocation: "Synn Lab"
+  },
+  {
+    id: "berke",
+    name: "Mrs. Berke",
+    subject: "History",
     initials: "B",
-    schedule: "In Lab daily",
-    bio: "Mrs. Burpee is an academic coach in the lab. She is another person you can go to for help if you need. She gives out candy every day to the students of the lab, being \"the powerhouse of the lab\". She is very passionate about her work, and is always excited to go out of her way to help a student in need.",
+    schedule: "Traditional: Monday & Wednesday | In Lab: Tuesday, Thursday, Friday",
+    bio: "Mrs. Berke is one of the history teachers in the lab. She teaches US History and AP Human Geography.",
     defaultLocation: "Synn Lab"
   }
 ];
 
 // ── STUDENT INTERVIEWS ──
-const INTERVIEWS = [
+export const INTERVIEWS = [
   {
-    name: "Isabel Hoeltje",
-    grade: "10th Grade",
-    skills: "Organization of tasks and prioritization of work.",
-    win: "CCP class success built on previous Synn Lab knowledge.",
-    challenge: "Collaboration and figuring out how to deal with issues that arise. Improved by simply doing it more often — learning what works and what doesn't.",
-    recommend: "People who don't love the routine of 'the teacher tells you what to do and you do it.' Independent free thinkers who want to be independent but still have access to support, and who want to grow as learners and are able to take feedback well."
-  },
-  {
-    name: "Gaven Gunnerson",
-    grade: "10th Grade",
-    skills: "A bit of leadership, a bit of time management, and a lot of executive function. A sense of responsibility over my work.",
-    win: "Creating a Future Friday workshop where I built an escape room to challenge people's problem-solving skills. Those that escaped got brownies.",
-    challenge: "Being behind in ELA at the start of the year. Used support from teachers like Mrs. Conatser. The teachers are always willing to help as long as you seek out support.",
+    name: "Peyton Schulten",
+    grade: "12th Grade",
+    skills: "Responsibility and professional communication.",
+    win: "Being able to keep up with all of my work so that I was able to spend my time attending professional seminars and meeting with professionals.",
+    challenge: "English was a subject that was difficult for me to complete. However, I was able to talk with Mrs. Conatser. The teachers are always willing to help as long as you seek out support.",
     recommend: "Anyone that is proactive, willing to take accountability, and wants to have a say in what they are learning."
   },
   {
@@ -165,23 +110,5 @@ const INTERVIEWS = [
 ];
 
 // ── LOCATIONS ──
-export const LOCATIONS = [
-  "Math Room",
-  "Science Room",
-  "English Room",
-  "History Room",
-  "Synn Lab",
-  "Small Science",
-  "Other"
-];
-
+export const LOCATIONS = ["Math Room", "Science Room", "English Room", "History Room", "Synn Lab", "Small Science", "Other"];
 export const ADMIN_PASSWORD = "SynnStaff26";
-
-// At the bottom of data.js, add these lines:
-window.firebaseConfig = firebaseConfig;
-window.CALENDAR_ID = CALENDAR_ID;
-window.CALENDAR_API_KEY = CALENDAR_API_KEY;
-window.TEACHERS = TEACHERS;
-window.INTERVIEWS = INTERVIEWS;
-window.LOCATIONS = LOCATIONS;
-window.ADMIN_PASSWORD = ADMIN_PASSWORD;
