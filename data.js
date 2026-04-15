@@ -176,3 +176,12 @@ export const LOCATIONS = [
 ];
 
 export const ADMIN_PASSWORD = "SynnStaff26";
+
+// At the bottom of data.js, add these lines:
+window.firebaseConfig = firebaseConfig;
+window.CALENDAR_ID = CALENDAR_ID;
+window.CALENDAR_API_KEY = CALENDAR_API_KEY;
+window.TEACHERS = TEACHERS;
+window.INTERVIEWS = INTERVIEWS;
+window.LOCATIONS = LOCATIONS;
+window.ADMIN_PASSWORD = ADMIN_PASSWORD;
