@@ -1,13 +1,24 @@
-// ── FIREBASE CONFIG ──
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBL01CF4uoFyNOcuvld7sUvCmkxq2PZpJY",
-  authDomain: "synn-lab-website.firebaseapp.com",
-  projectId: "synn-lab-website",
-  storageBucket: "synn-lab-website.firebasestorage.app",
-  messagingSenderId: "13702226348",
-  appId: "1:13702226348:web:07e85688b017e6d301da09",
-  measurementId: "G-MSYNH78VTL"
+  apiKey: "AIzaSyCux-Zu4NtHdba_xV9tHPG3EoSbxNH-iaY",
+  authDomain: "synnlab.firebaseapp.com",
+  projectId: "synnlab",
+  storageBucket: "synnlab.firebasestorage.app",
+  messagingSenderId: "646550366753",
+  appId: "1:646550366753:web:955784c124fee82669d160",
+  measurementId: "G-N9XWC7FVL5"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // ── GOOGLE CALENDAR CONFIG ──
 const CALENDAR_ID = "c_11826ce2a0863e61725e61ca90ed7560418d88d94590c691bc935c0a415794d0@group.calendar.google.com";
