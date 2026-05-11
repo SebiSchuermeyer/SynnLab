@@ -118,7 +118,7 @@ export const TEACHERS = [
   },
   {
     id: "burpee",
-    name: "Mrs. Burpee",
+    name: "Ms. Burpee",
     photo: "images/teachers/burpee.png",
     subject: "Academic Coach",
     initials: "B",
