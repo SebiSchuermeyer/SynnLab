@@ -161,6 +161,14 @@ export const INTERVIEWS = [
     win: "My research paper at the end of my freshman year. I had the ability to choose the topic and it led me to be passionate about the work I made — I am still proud of it.",
     challenge: "Time management. The Synn Lab forces you to use your time well, and right now I am ahead in all my classes because I have managed my time well.",
     recommend: "The want to learn is what you need to succeed."
+  },
+  {
+    name: "Hana Husseini",
+    grade: "10th Grade",
+    skills: "Some skills I have learned are leadership skills, independence, and I have gotten way better at time manegment!",
+    win: "My biggest win has been making a bunch of new friends and gaining a stronger, and more personal relationship with all my teachers. Also, my ability to choose topics I'm passionate about. One specific example is my portfolio, where I saw my growth over the years.",
+    challenge: "Staying on topic with small assignments and it has caused me to fall behind in class at times.",
+    recommend: "Students who are open to trying new experience, mainly for those wanting to feel prepare for college!"
   }
 ];
 
