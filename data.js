@@ -123,7 +123,7 @@ export const TEACHERS = [
     subject: "Academic Coach",
     initials: "B",
     schedule: "In Lab daily",
-    bio: "Mrs. Burpee is an academic coach in the lab. She is another person you can go to for help if you need. She gives out candy every day to the students of the lab, being \"the powerhouse of the lab\". She is very passionate about her work, and is always excited to go out of her way to help a student in need.",
+    bio: "Ms. Burpee is an academic coach in the lab. She is another person you can go to for help if you need. She gives out candy every day to the students of the lab, being \"the powerhouse of the lab\". She is very passionate about her work, and is always excited to go out of her way to help a student in need.",
     defaultLocation: "Synn Lab"
   }
 ];
