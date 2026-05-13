@@ -100,10 +100,10 @@ export const TEACHERS = [
     id: "conatser",
     name: "Mrs. Conatser",
     photo: "images/teachers/conatser.png",
-    subject: "Academic Coach",
+    subject: "Learning Consultant & Intervention Specialist",
     initials: "C",
     schedule: "In Lab daily",
-    bio: "Mrs. Conatser is one of the academic coaches in the lab. If you need any help to set up a plan or manage time better, she is someone you can always go to. She is one of the adult leaders in Fashion for the Cure, and is always willing to help. She also leads synn lab spring break trip!",
+    bio: "Mrs. Conatser is one of the academic coaches in the lab, and co-teaches bio. If you need any help to set up a plan or manage time better, she is someone you can always go to. She is one of the adult leaders in Fashion for the Cure, and is always willing to help. She also leads synn lab spring break trip!",
     defaultLocation: "Synn Lab"
   },
   {
