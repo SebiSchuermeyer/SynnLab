@@ -73,7 +73,7 @@ export const TEACHERS = [
     subject: "Science",
     initials: "A",
     schedule: "Traditional: Monday & Wednesday",
-    bio: "Mr. Arnold is a science teacher in the lab who teaches Chem. When he is not teaching chem to students (and making their brains hurt), he is probably running one of the million things he does in the lab. You may find him feeding fish in the fish tank, writing a question of the day, or being in a meeting with another teacher.",
+    bio: "Mr. Arnold is a science teacher in the lab who teaches Chem and the depertmant chair of the lab. When he is not teaching chem to students (and making their brains hurt), he is probably running one of the million things he does in the lab. You may find him feeding fish in the fish tank, writing a question of the day, or being in a meeting with another teacher.",
     defaultLocation: "Science Room"
   },
   {
@@ -103,7 +103,7 @@ export const TEACHERS = [
     subject: "Academic Coach",
     initials: "C",
     schedule: "In Lab daily",
-    bio: "Mrs. Conatser is one of the academic coaches in the lab. If you need any help to set up a plan or manage time better, she is someone you can always go to. She is one of the adult leaders in Fashion for the Cure, and is always willing to help.",
+    bio: "Mrs. Conatser is one of the academic coaches in the lab. If you need any help to set up a plan or manage time better, she is someone you can always go to. She is one of the adult leaders in Fashion for the Cure, and is always willing to help. She also leads synn lab spring break trip!",
     defaultLocation: "Synn Lab"
   },
   {
